@@ -2,7 +2,7 @@ name: Daily Script Run
 
 on:
   schedule:
-    - cron: '40 13 * * 1-6 # Runs every day at midnight UTC
+    - cron: '42 13 * * 1-6 # Runs every day at midnight UTC
 
 jobs:
   run_script:
@@ -23,6 +23,6 @@ jobs:
         
 
     - name: Run script
-      run: python your_script.py
+      run: python Order-Cleaning-script/Order_data_cleaning.py
       env:
         DROPBOX_TOKEN: ${{ secrets.DROPBOX_TOKEN }}
