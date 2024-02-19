@@ -4,7 +4,7 @@ from io import BytesIO
 import requests
 
 # Replace 'YOUR_ACCESS_TOKEN' with your actual access token
-ACCESS_TOKEN = 'sl.Bv7fuFB3_1QKERNJd8HuTsz7Bi3_UFu1dF1JmHolawMR6AF_j1TbQ-Jugc-hmf3nHTzj1YxKWPQFrArid_9LRQUpRNzHa5WIy3dsLREfPFico9WPv4_KaGCpxYSWvGGaBOweJexVCIHWuVoG-Zm5'
+ACCESS_TOKEN = 'sl.Bv6vGdF_UXSVU4gHA29Z_RICCNUIXqHooykTYouQkLy8y8aN0Q2lFfEIzL7CiuxX5Uy6VziazqCTDFAIP_Ys3mMmMFWTl_7ambE7-KEWijkkMHX3BJWqyONS50YCd5Tg8cZxrW5MAoV6q2GUTaSt'
 
 # Initialize Dropbox client
 dbx = dropbox.Dropbox(ACCESS_TOKEN)
