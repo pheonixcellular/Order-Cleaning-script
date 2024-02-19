@@ -22,7 +22,7 @@ jobs:
         
 
     - name: Run script
-      run: python Order-Cleaning-script/Order_data_cleaning.py
+      run: python Order_data_cleaning.py
       env:
         DROPBOX_TOKEN: ${{ secrets.DROPBOX_TOKEN }}
 
