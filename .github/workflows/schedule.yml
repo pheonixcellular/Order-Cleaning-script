@@ -2,7 +2,7 @@ name: Daily Script Run
 
 on:
   schedule:
-    - cron: '44 13 * * 1-6' # Runs every day at 1:42 PM UTC on weekdays (Monday through Saturday)
+    - cron: '48 13 * * 1-6' # Runs every day at 1:42 PM UTC on weekdays (Monday through Saturday)
 
 jobs:
   run_script:
@@ -26,3 +26,6 @@ jobs:
       run: python Order-Cleaning-script/Order_data_cleaning.py
       env:
         DROPBOX_TOKEN: ${{ secrets.DROPBOX_TOKEN }}
+
+    - name: Create completion marker
+      run: echo "Workflow ran successfully" > workflow_completed.txt
