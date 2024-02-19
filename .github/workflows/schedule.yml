@@ -2,7 +2,7 @@ name: Daily Script Run
 
 on:
   schedule:
-    - cron: '25 13 * * 1-6' # Runs every day at 1:42 PM UTC on weekdays (Monday through Saturday)
+    - cron: '27 13 * * 1-6' # Runs every day at 1:42 PM UTC on weekdays (Monday through Saturday)
 
 jobs:
   run_script:
