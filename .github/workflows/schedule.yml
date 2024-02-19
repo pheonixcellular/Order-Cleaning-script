@@ -19,7 +19,7 @@ jobs:
     - name: Upgrade pip and reinstall dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pandas dropbox pkg_resources
+        pip install pkg_resources pandas dropbox
         
 
     - name: Run script
