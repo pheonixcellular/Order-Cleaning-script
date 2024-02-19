@@ -2,9 +2,9 @@ import pyforest as py
 import dropbox
 from io import BytesIO
 import requests
-
+import os
 # Replace 'YOUR_ACCESS_TOKEN' with your actual access token
-ACCESS_TOKEN = 'sl.Bv5XALZ1dO57omVbSaShRG6yCqB_-6h2EH82bVC7RWE2T_kr-KwqpP0cHd8tBipxpXCpbr_SG6tMgO_seBE9XyelPG4aCkWBPNJN4tdD9uwBrSwwsCJgDTjmLJepYCCcESuV0d41o-D_A6f9phXD'
+ACCESS_TOKEN = os.environ.get('DROPBOX_TOKEN')
 
 # Initialize Dropbox client
 dbx = dropbox.Dropbox(ACCESS_TOKEN)
