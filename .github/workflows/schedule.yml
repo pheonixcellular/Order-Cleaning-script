@@ -1,7 +1,7 @@
 name: schedule
 on:
   schedule:
-    - cron: '*/15 * * * *' # Runs every 5 minutes
+    - cron: '*/55 * * * *' # Runs every 5 minutes
 
 jobs:
   run_script:
